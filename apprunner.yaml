@@ -11,5 +11,7 @@ run:
   network:
     port: 8000
   env:
-    PYTHONPATH: "."
-    ENV: "production"
+    - name: PYTHONPATH
+      value: "."
+    - name: ENV
+      value: "production"
